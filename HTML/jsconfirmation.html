@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function getConfirmation(){
+                var retVal=confirm("Do you want to continue?");
+                if(retVal==true){
+                    document.write("Welcome to Python class!");
+                    return true;
+                }
+                else{
+                    document.write("User does not want to continue!");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="button" value="Click" onclick="getConfirmation();"/>
+        </form>
+    </body>
+</html>
